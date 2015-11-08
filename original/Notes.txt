@@ -1,9 +1,9 @@
 Notes
 
 p = 100 (population)
-i = ?
+i = influx of ppl
 z = year
-H = 3000
+H = 3000 (bushels harvested)
 Y = 3 (Harvested bussels per acre)
 a = acres = H/Y = 1000 (to start)
 S = bushels in store.
@@ -11,3 +11,105 @@ E = H - s (rats eaten)
 
 
 Plague = 1/2 the population dies
+
+
+C = random( 0 - 10 )
+Y = C + 17    -- Bushels per acre to buy acres
+
+======
+Buy Acres
+	+ a
+	- S (bushels)
+
+Sell Acres
+	- a
+	+ S (bushels)
+
+Feed People (bushels)
+	- S
+
+Plant Acres
+	* D = acres
+
+	* D < a --  plant crops
+	int( D / 2 ) < S ?
+
+	Bushels needed = Acres / 2
+
+	* D < 10 * P
+	Need 10 people per acre
+
+	S = S - int( D / 2 )
+
+	C = random( 1 - 6 )
+
+Harvest ( 512 / 515 )
+	Y = C --- random (1 - 6)
+	H = D * Y ( )
+
+Rats
+	C = random( 1 - 6 )
+	if int(c/2) == c/2  then recalc E (bushels eatern by rats)
+
+	E = int( s / c )
+
+Update Bushels
+	S = S - E + H
+
+Population increase
+	C = random( 1 - 6 )
+
+	I = int( C * (20 * A * S) / P / 100 + 1)
+
+	Acres * Bushels * 20
+		* C (random)
+			/ P (population)
+				/ 100
+	+ 1
+
+Full tummies
+	C = int( Q / 20 ) --- Q = bushels fed to the people
+	C is number of people full
+
+Plague (~15% chance)
+	Q = int( 10* (2*random(1)-0.3))
+	If Q > 0 then no plague
+	if plague then P = int( P / 2 )
+
+Starved enough to be impeached?
+	D = P - C    -- C still the number of full people  D = dead
+	if D > 0.45 * P then starved too many people (Game over)
+
+	P1 = (( Z - 1 ) * P1 + D * 100 / P ) / Z
+
+	P = C   -- update the population to only those fully fed
+	D1 = D1 + D 	-- D1 = total dead
+
+REPEAT for 10 years
+
+
+Results
+	L = A / P
+
+	if P1 > 33 or L < 7 then
+		Impeached and a national fink,
+
+	if P1 > 10 or L < 9 then
+		Heavy handed, Ivan IV, Hated
+
+	if P1 > 3 or L < 10 then
+		Not horrible performance
+
+	else
+		Fantastic performance
+
+
+
+
+
+
+
+
+
+
+
