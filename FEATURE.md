@@ -18,3 +18,5 @@ This state will progress to the next state with an empty "/hab" command.
 In the original, a negative (<0) input value resulted in termination of the game.
 If this is desired to be kept, it would reset the game to the special state between end and start.
 
+## Saved variables
+I'm not sure I want to save variables between sessions or not.
