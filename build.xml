@@ -109,7 +109,7 @@
 	</target>
 
 	<target name="wow" depends="test" description="copy files to currnet wow install">
-		<property name="addon.dir" location="/Applications/World of Warcraft/Interface/Addons/${ant.project.name}"/>
+		<property name="addon.dir" location="${ADDONLOC}/${ant.project.name}"/>
 		<mkdir dir="${addon.dir}"/>
 		<copy todir="${addon.dir}" filtering="true">
 			<fileset dir="src">
