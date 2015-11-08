@@ -1,0 +1,13 @@
+Notes
+
+p = 100 (population)
+i = ?
+z = year
+H = 3000
+Y = 3 (Harvested bussels per acre)
+a = acres = H/Y = 1000 (to start)
+S = bushels in store.
+E = H - s (rats eaten)
+
+
+Plague = 1/2 the population dies
