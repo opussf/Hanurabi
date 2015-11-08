@@ -1,0 +1,10 @@
+## Interface: @INTERFACE@
+## Title: Hanurabi
+## Notes: Play the game of Hanurabi. @VERSION@
+## Author: opussf
+## Version: @VERSION@
+## Description: Try your hand at managing a land for 10 years.
+## SavedVariables:
+## SavedVariablesPerCharacter:
+
+Hanurabi.lua
