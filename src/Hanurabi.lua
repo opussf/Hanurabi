@@ -3,8 +3,6 @@ HANURABI_MSG_VERSION = GetAddOnMetadata("Hanurabi" ,"Version");
 HANURABI = {}
 HANURABI.currentState = 0
 
-SLASH_HANURABI1 = "/HAN"
-SlashCmdList["HANURABI"] = HANURABI.command
 
 function HANURABI.print( msg )
 	-- print to the chat frame
@@ -291,5 +289,6 @@ function HANURABI.command( msg )
 	end
 end
 
-
+SLASH_HANURABI1 = "/HAN"
+SlashCmdList["HANURABI"] = HANURABI.command
 
