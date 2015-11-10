@@ -20,3 +20,4 @@ If this is desired to be kept, it would reset the game to the special state betw
 
 ## Saved variables
 I'm not sure I want to save variables between sessions or not.
+
