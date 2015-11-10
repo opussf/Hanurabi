@@ -104,7 +104,7 @@ function HANURABI.state4( bushelsToFeed )
 	-- Feed the people
 	HANURABI.bushelsToFeed = nil  -- clear this variable
 	if bushelsToFeed then
-		print( "You want to feed "..bushelsToFeed.." bushels" )
+		-- print( "You want to feed "..bushelsToFeed.." bushels" )
 		if bushelsToFeed < 0 then
 			return  85
 		else
