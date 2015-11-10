@@ -323,7 +323,6 @@ function test.test_state6_starveSomePeople()
 	HANURABI.command( 100 ) -- plant 100 acres
 	assertEquals( 25, HANURABI.P1 )
 	assertEquals( 25, HANURABI.deadTotal )
-	assertTrue( HANURABI.population >= 75 )
 	assertEquals( 2, HANURABI.currentState )
 
 end
