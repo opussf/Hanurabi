@@ -270,6 +270,7 @@ HANURABI.states = {
 	[7] = HANURABI.state7,
 	[56] = HANURABI.state56,
 	[85] = HANURABI.state85,
+	[90] = HANURABI.state90,
 	[94] = HANURABI.state94,
 	[96] = HANURABI.state96,
 	[99] = HANURABI.state99,
