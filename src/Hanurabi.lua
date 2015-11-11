@@ -6,7 +6,6 @@ HANURABI.currentState = 0
 
 function HANURABI.print( msg )
 	-- print to the chat frame
-	-- set showName to false to suppress the addon name printing
 	DEFAULT_CHAT_FRAME:AddMessage( msg )
 end
 
@@ -223,7 +222,7 @@ end
 function HANURABI.state56()
 	-- starved too many people
 	HANURABI.print( "Due to this extreme mismangement you have not only" )
-	HANURABI.print( "ben impeached and thrown out of office but you have" )
+	HANURABI.print( "been impeached and thrown out of office but you have" )
 	HANURABI.print( "also been declared national fink!!!!" )
 	return 99
 end
