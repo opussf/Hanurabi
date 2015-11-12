@@ -24,8 +24,11 @@ function HANURABI.state0()
 	HANURABI.eatenByRats = HANURABI.bushelsHarvested - HANURABI.bushelsStored
 	HANURABI.plagueChance = 1
 
+	math.randomseed(os.time())
+	local c = random(5)
+
 	HANURABI.print( "HANURABI v"..HANURABI_MSG_VERSION )
-	HANURABI.print( "Origina from Creative Computing   Morristown, New Jersey" )
+	HANURABI.print( "Original from Creative Computing   Morristown, New Jersey" )
 	HANURABI.print( "Try your hand at governing ancient Sumeria" )
 	HANURABI.print( "for a ten-year term of office." )
 	return 1
