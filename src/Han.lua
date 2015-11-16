@@ -24,6 +24,9 @@ end
 
 HANURABI.states[99] = newState99
 
+math.randomseed(os.time())
+local c = random(5)
+
 -- Start the game
 HANURABI.command()
 running = true

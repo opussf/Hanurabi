@@ -24,9 +24,6 @@ function HANURABI.state0()
 	HANURABI.eatenByRats = HANURABI.bushelsHarvested - HANURABI.bushelsStored
 	HANURABI.plagueChance = 1
 
-	math.randomseed(os.time())
-	local c = random(5)
-
 	HANURABI.print( "HANURABI v"..HANURABI_MSG_VERSION )
 	HANURABI.print( "Original from Creative Computing   Morristown, New Jersey" )
 	HANURABI.print( "Try your hand at governing ancient Sumeria" )
@@ -35,7 +32,7 @@ function HANURABI.state0()
 end
 function HANURABI.state1()
 	-- Initial info
-	HANURABI.print( "Hanurabi: I beg to report to you," )
+	HANURABI.print( "Hanurabi, I beg to report to you," )
 	HANURABI.year = HANURABI.year + 1
 	HANURABI.print( "In year "..HANURABI.year..", "..HANURABI.starved.." people starved, "..HANURABI.imigrated.." came to the city," )
 	HANURABI.population = HANURABI.population + HANURABI.imigrated
