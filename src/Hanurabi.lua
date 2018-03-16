@@ -75,7 +75,7 @@ function HANURABI.state2( acresToBuy )
 		end
 	end
 	HANURABI.print( "Land is trading at "..HANURABI.bushelsPerAcre.." bushels per acre." )
-	HANURABI.print( "How many acres do you wish to buy" )
+	HANURABI.print( "How many acres do you wish to buy?" )
 end
 function HANURABI.notEnoughAcres()
 	HANURABI.print( "Hanurabi, think again.  You own only "..HANURABI.acres.." acres. Now then" )
@@ -97,7 +97,7 @@ function HANURABI.state3( acresToSell )
 		end
 	end
 	HANURABI.print( "Land is trading at "..HANURABI.bushelsPerAcre.." bushels per acre." )
-	HANURABI.print( "How many acres do you wish to sell" )
+	HANURABI.print( "How many acres do you wish to sell?" )
 end
 function HANURABI.state4( bushelsToFeed )
 	-- Feed the people
@@ -117,7 +117,7 @@ function HANURABI.state4( bushelsToFeed )
 		end
 	end
 	HANURABI.print( "Population is "..HANURABI.population.." and "..HANURABI.bushelsStored.." bushels are in store." )
-	HANURABI.print( "How many bushels do you wish to feed your people" )
+	HANURABI.print( "How many bushels do you wish to feed your people?" )
 end
 function HANURABI.notEnoughPopulation()
 	HANURABI.print( "But you have only "..HANURABI.population.." people to tend the fields! Now then," )
@@ -150,7 +150,7 @@ function HANURABI.state5( acresToPlant )
 		end
 	end
 	HANURABI.print( "You own "..HANURABI.acres.." acres and "..HANURABI.bushelsStored.." bushels are in store." )
-	HANURABI.print( "How many acres do you wish to plant with seed" )
+	HANURABI.print( "How many acres do you wish to plant with seed?" )
 end
 function HANURABI.state6()
 	-- compute
