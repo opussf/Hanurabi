@@ -1,5 +1,5 @@
+## Title: Hanurabi v@VERSION@
 ## Interface: @INTERFACE@
-## Title: Hanurabi
 ## Notes: Play the game of Hanurabi. @VERSION@
 ## Author: opussf
 ## Version: @VERSION@
