@@ -1,6 +1,6 @@
-## Title: Hanurabi v@VERSION@
+## Title: Hanurabi
 ## Interface: @INTERFACE@
-## Notes: Play the game of Hanurabi. @VERSION@
+## Notes: Play the game of Hanurabi. (v@VERSION@)
 ## Author: opussf
 ## Version: @VERSION@
 ## Description: Try your hand at managing a land for 10 years.
